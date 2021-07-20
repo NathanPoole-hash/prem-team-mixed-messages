@@ -4,11 +4,7 @@ let team = ['Arsenal', 'Aston Villa', 'Brentford', 'Brighton', 'Burnley', 'Chels
 ];
 const randomTeam = team[Math.floor(Math.random() * team.length)];
 
-console.log(randomTeam)
-
-let randomPosition = Math.floor(Math.random()) * 20 + 1
-
-console.log(randomPosition)
+let randomPosition = Math.floor(Math.random() * 20 + 1)
 
 let randomGoals = function () {
     if (randomPosition >= 15) {
@@ -21,7 +17,6 @@ let randomGoals = function () {
         return Math.floor(Math.random() * 150 + 65)
     }
 }
-console.log(randomGoals())
 
 let generateRandomStats = function() {
 return 'Your Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
