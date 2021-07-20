@@ -18,7 +18,7 @@ let randomGoals = Math.floor(Math.random() * 150);
 console.log(randomGoals)
 
 let generateRandomStats = function() {
-return 'My Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
+return 'Your Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
 randomGoals + ' goals!'}
 
 console.log(generateRandomStats());
