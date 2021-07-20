@@ -32,7 +32,11 @@ let convertToOrdinal = function () {
 }
 
 let generateRandomStats = function() {
-    return 'Your Team is ' + randomTeam + ', they finished ' + `${convertToOrdinal()}` + 
-    ' and they scored ' + `${randomGoals()}` + ' goals!'}
+    console.log('Your Team is ' + randomTeam + ', they finished ' + `${convertToOrdinal()}` + 
+    ' and they scored ' + `${randomGoals()}` + ' goals!')
+    }
+
+    generateRandomStats()
     
-    console.log(generateRandomStats());
+    
+    
