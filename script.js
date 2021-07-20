@@ -2,5 +2,5 @@ let randomTeam = ['Arsenal', 'Aston Villa', 'Brentford', 'Brighton', 'Burnley', 
 'Everton', 'Leeds', 'Leicester', 'Liverpool', 'Manchester City', 'Manchester United', 'Newcastle', 'Norwich', 
 'Southampton', 'Tottenham', 'Watford', 'West Ham', 'Wolves'
 ]
-console.log(randomTeam[0])
-
+const randomElement = randomTeam[Math.floor(Math.random() * randomTeam.length)]
+console.log(randomElement)
