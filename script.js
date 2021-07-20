@@ -6,6 +6,7 @@ const randomTeam = team[Math.floor(Math.random() * team.length)];
 
 console.log(randomTeam)
 
+
 let randomPosition = Math.floor(Math.random() * 21)
 
 console.log(randomPosition)
@@ -14,6 +15,10 @@ let randomGoals = Math.floor(Math.random() * 150);
 
 console.log(randomGoals)
 
-console.log('My Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
-randomGoals + ' goals!')
+let generateRandomStats = function() {
+return 'My Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
+randomGoals + ' goals!'}
+
+console.log(generateRandomStats());
+
 
