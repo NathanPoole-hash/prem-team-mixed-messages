@@ -6,6 +6,7 @@ const randomTeam = team[Math.floor(Math.random() * team.length)];
 
 let randomPosition = Math.floor(Math.random() * 20 + 1)
 
+
 let randomGoals = function () {
     if (randomPosition >= 15) {
         return Math.floor(Math.random() * 40 + 8)
@@ -18,10 +19,20 @@ let randomGoals = function () {
     }
 }
 
+let convertToOrdinal = function () {
+    if (randomPosition === 1) {
+        return '1st'
+    } else if (randomPosition === 2) {
+        return '2nd'
+    } else if (randomPosition === 3) {
+    return '3rd'
+    } else if (randomPosition >= 4 && randomPosition <= 20) {
+    return randomPosition + 'th'
+}
+}
+
 let generateRandomStats = function() {
-return 'Your Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
-`${randomGoals()}` + ' goals!'}
-
-console.log(generateRandomStats());
-
-
+    return 'Your Team is ' + randomTeam + ', they finished ' + `${convertToOrdinal()}` + 
+    ' and they scored ' + `${randomGoals()}` + ' goals!'}
+    
+    console.log(generateRandomStats());
