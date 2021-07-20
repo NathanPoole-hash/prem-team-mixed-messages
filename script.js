@@ -13,3 +13,7 @@ console.log(randomPosition)
 let randomGoals = Math.floor(Math.random() * 150);
 
 console.log(randomGoals)
+
+console.log('My Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
+randomGoals + ' goals!')
+
