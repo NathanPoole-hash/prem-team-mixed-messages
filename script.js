@@ -2,4 +2,5 @@ let randomTeam = ['Arsenal', 'Aston Villa', 'Brentford', 'Brighton', 'Burnley', 
 'Everton', 'Leeds', 'Leicester', 'Liverpool', 'Manchester City', 'Manchester United', 'Newcastle', 'Norwich', 
 'Southampton', 'Tottenham', 'Watford', 'West Ham', 'Wolves'
 ]
-randomTeam [0]
+console.log(randomTeam[0])
+
