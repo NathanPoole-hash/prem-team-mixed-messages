@@ -6,20 +6,26 @@ const randomTeam = team[Math.floor(Math.random() * team.length)];
 
 console.log(randomTeam)
 
-let position = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th', '11th', '12th', '13th',
- '14th', '15th', '16th', '17th', '18th', '19th', '20th']
-
-let randomPosition = position[Math.floor(Math.random() * position.length)];
+let randomPosition = Math.floor(Math.random()) * 20 + 1
 
 console.log(randomPosition)
 
-let randomGoals = Math.floor(Math.random() * 150);
-
-console.log(randomGoals)
+let randomGoals = function () {
+    if (randomPosition >= 15) {
+        return Math.floor(Math.random() * 40 + 8)
+    } else if (randomPosition >= 10 && randomPosition < 15) {
+    return Math.floor(Math.random() * 80 + 30)
+    } else if (randomPosition >= 5 && randomPosition <10) {
+        return Math.floor(Math.random() * 100 + 50)
+    } else if (randomPosition < 5) {
+        return Math.floor(Math.random() * 150 + 65)
+    }
+}
+console.log(randomGoals())
 
 let generateRandomStats = function() {
 return 'Your Team is ' + randomTeam + ', they finished ' + randomPosition + ' and they scored ' + 
-randomGoals + ' goals!'}
+`${randomGoals()}` + ' goals!'}
 
 console.log(generateRandomStats());
 
